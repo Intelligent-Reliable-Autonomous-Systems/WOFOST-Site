@@ -256,7 +256,7 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              <i>>WOFOSTGym</i> also allows the user to generate data using RL or open-loop policies across 
+              <i>WOFOSTGym</i> also allows the user to generate data using RL or open-loop policies across 
               years and locations for use with offline RL. 
             </p>
             <video id="data" controls playsinline height="100%">
@@ -273,13 +273,12 @@
     <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-        <h3 class="title is-4">Interpolating states</h3>
+        <h3 class="title is-4">Configuration Files</h3>
         <div class="content has-text-justified">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
+            All configuration files in <i>WOFOSTGym</i> are easy to read YAML files. The agromanagement file defines a crop
+            and site. WOFOSTGym comes with 25 crop and 3 site YAML files, while the agromangement file is easy to configure
+            and requires no domain expertise for RL researchers.
           </p>
         </div>
         <div class="columns is-vcentered interpolation-panel">
@@ -287,21 +286,30 @@
             <img src="./static/images/interpolate_start.jpg"
                  class="interpolation-image"
                  alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
+            <p>Agromanagement File</p>
           </div>
-          <div class="column interpolation-video-column">
+
+          <div class="columns is-vcentered interpolation-panel">
+            <div class="column is-3 has-text-centered">
+              <img src="./static/images/interpolate_start.jpg"
+                   class="interpolation-image"
+                   alt="Interpolate start reference image."/>
+              <p>Wheat Cofiguration File</p>
+            </div>
+
+          <!--<div class="column interpolation-video-column">
             <div id="interpolation-image-wrapper">
               Loading...
             </div>
             <input class="slider is-fullwidth is-large is-info"
                    id="interpolation-slider"
                    step="1" min="0" max="100" value="0" type="range">
-          </div>
+          </div>-->
           <div class="column is-3 has-text-centered">
             <img src="./static/images/interpolate_end.jpg"
                  class="interpolation-image"
                  alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
+            <p class="is-bold">Oregon Site Configuration File</p>
           </div>
         </div>
         <br/>
@@ -319,8 +327,6 @@
           <img src="./static/videos/policy_yield_KAVAIL.png" alt="policy_kavail" height="100%">
           <img src="./static/videos/policy_yield_WSO.png" alt="policy_wso" height="100%">
         </div>
-        <!--/ Re-rendering. -->
-
       </div>
     </div>
     <!--/ Animation. -->
