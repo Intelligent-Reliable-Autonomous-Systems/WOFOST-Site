@@ -309,24 +309,18 @@
         <br/>
         <!--/ Interpolating. -->
 
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
+        <!-- Visualizing. -->
+        <h3 class="title is-4">Compare the Effects of RL and Open-Loop Policies</h3>
         <div class="content has-text-justified">
           <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
+            After training an RL policy, we visualize its actions and effects on crop and soil features. 
           </p>
         </div>
         <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
+          <img src="./static/videos/policy_yield_KAVAIL.png" alt="policy_kavail" height="100%">
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/videos/policy_yield_WSO.png" alt="policy_wso" height="100%">
         </div>
         <!--/ Re-rendering. -->
 
