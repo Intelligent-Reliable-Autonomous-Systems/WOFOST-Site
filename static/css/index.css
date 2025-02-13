@@ -161,3 +161,14 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Centers images horizontally */
+  gap: 20px; /* Adds spacing between images */
+}
+
+.image-container img {
+  max-width: 45%; /* Ensures images scale well */
+  height: auto;
+}
