@@ -271,40 +271,42 @@
     <!--/ Matting. -->
 
     <!-- Animation. -->
+    <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h3 class="title is-4">Configuration Files</h3>
         <div class="content has-text-justified">
           <p>
-            All configuration files in <i>WOFOSTGym</i> are easy to read YAML files. The agromanagement file defines a crop
-            and site. WOFOSTGym comes with 25 crop and 3 site YAML files, while the agromangement file is easy to configure
+            All configuration files in <i>WOFOSTGym</i> are easy-to-read YAML files. The agromanagement file defines a crop
+            and site. WOFOSTGym comes with 25 crop and 3 site YAML files, while the agromanagement file is easy to configure
             and requires no domain expertise for RL researchers.
           </p>
         </div>
 
-        <div class="columns is-vcentered">
+        <!-- Single 'columns' container for all images -->
+        <div class="columns is-vcentered is-centered">
+          
           <div class="column is-3 has-text-centered">
-            <img src="./static/videos/agro.png"
-                 alt="agro"/>
+            <img src="./static/videos/agro.png" alt="agro"/>
             <p>Agromanagement File</p>
           </div>
 
-          <div class="columns is-vcentered ">
-            <div class="column is-3 has-text-centered">
-              <img src="./static/videos/crop.png"
-                   alt="Interpolate start reference image."/>
-              <p>Wheat Cofiguration File</p>
-            </div>
-          <div class="columns is-vcentered ">
-            <div class="column is-3 has-text-centered">
-              <img src="./static/images/site.png"
-                  alt="Interpolation end reference image."/>
-              <p class="is-bold">Oregon Site Configuration File</p>
-            </div>
+          <div class="column is-3 has-text-centered">
+            <img src="./static/videos/crop.png" alt="crop"/>
+            <p>Wheat Configuration File</p>
           </div>
-        </div>
+
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/site.png" alt="site"/>
+            <p class="is-bold">Oregon Site Configuration File</p>
+          </div>
+
+        </div> <!-- Closing 'columns' container -->
+        
         <br/>
       </div>
+    </div>
+
 
       <!-- Visualizing. -->
       <h3 class="title is-4">Compare the Effects of RL and Open-Loop Policies</h3>
