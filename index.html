@@ -237,13 +237,13 @@
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
+          <h2 class="title is-3">Training</h2>
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+            Using <i>WOFOSTGym</i> you can easily train RL agents with a command line argument that
+            supports a wide range of configuration. 
           </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
+          <video id="training" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/train.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -252,15 +252,14 @@
 
       <!-- Matting. -->
       <div class="column">
-        <h2 class="title is-3">Matting</h2>
+        <h2 class="title is-3">Generating Data</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
+              WOFOSTGym also allows the user to generate data for use with offline RL. 
             </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
+            <video id="data" controls playsinline height="100%">
+              <source src="./static/videos/gen_data.mp4"
                       type="video/mp4">
             </video>
           </div>
@@ -271,11 +270,10 @@
     <!--/ Matting. -->
 
     <!-- Animation. -->
+    <!-- 
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
         <h3 class="title is-4">Interpolating states</h3>
         <div class="content has-text-justified">
           <p>
@@ -307,7 +305,7 @@
           </div>
         </div>
         <br/>
-        <!--/ Interpolating. -->
+      -->
 
         <!-- Visualizing. -->
         <h3 class="title is-4">Compare the Effects of RL and Open-Loop Policies</h3>
